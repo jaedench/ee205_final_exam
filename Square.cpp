@@ -15,9 +15,11 @@
 #include <cassert>
 
 #include "Square.h"
+#include "Rectangle.h"
 
 Square::Square(double newSide) : Rectangle( newSide, newSide ) {
-
+    length = newSide;
+    width = newSide;
 }
 
 double Square::getSide() {
